@@ -32,7 +32,7 @@ class MainActivity: FlutterActivity(), AstraPayQrisListener {
             if (call.method == "startQris") { 
                 //println("---> startQris called")
 
-                AstraPayQris.setup("XTOKEN", "SIT")
+                AstraPayQris.setup("SDK_TOKEN", "UAT")
                 val astraPayAuth = AstraPayQrisAuth(
                     context = this,
                     authorizationToken = "AUTH_TOKEN",
